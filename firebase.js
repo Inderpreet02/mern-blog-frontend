@@ -1,6 +1,8 @@
+require('dotenv').config()
+
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyBeBZSl23tVi43StOoHPMp9fNXqdOq4RHg",
+    apiKey: process.env.API_KEY,
     authDomain: "mern-blog-a239d.firebaseapp.com",
     projectId: "mern-blog-a239d",
     storageBucket: "mern-blog-a239d.appspot.com",
