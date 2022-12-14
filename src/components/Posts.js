@@ -4,7 +4,7 @@ import Post from "./Post";
 const Posts = ({posts}) => {
     return (
         <div className="posts">
-            {posts.map((p) => (
+            {posts?.map((p) => (
                 <Post post={p}/>
             ))}
         </div>
