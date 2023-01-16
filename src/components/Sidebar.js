@@ -8,8 +8,12 @@ const Siderbar = () => {
 
     useEffect(()=>{
         const getCategories = async () =>{
-            const res = await axios.get("/categories")
-            setCategories(res.data)
+            try{
+                const res = await axios.get("/categories")
+                setCategories(res.data)
+            }catch(e){
+                console.log(e);
+            }
         }
 
         getCategories();
