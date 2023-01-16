@@ -8,12 +8,13 @@ import { useLocation } from "react-router-dom";
 
 const Home = () => {
     // eslint-disable-next-line
-    const [posts, setPosts] = useState(null)
+    const [posts, setPosts] = useState(undefined)
     const {search} = useLocation();
 
     useEffect(() => {
         const fetchPosts = async () =>{
             const res = await axios.get("/posts" + search)
+            console.log(res.data);
             setPosts(res.data);
         }
 
