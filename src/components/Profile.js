@@ -63,7 +63,7 @@ const Profile = () => {
                 <div className="form__picInput">
                     <img src="https://i0.wp.com/bestlifeonline.com/wp-content/uploads/2019/04/boy-hugging-cactus.jpg?resize=1024%2C1024&ssl=1" alt="" className="profile__img" />
                     <span>
-                        <label htmlFor="form__uploadPic"><i class="profile__icon fas fa-user-circle"></i></label>
+                        <label htmlFor="form__uploadPic"><i className="profile__icon fas fa-user-circle"></i></label>
                         <input type="file" id="form__uploadPic" style={{display: "none"}} />
                     </span>
                 </div>

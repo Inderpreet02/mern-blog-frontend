@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 
 const Home = () => {
     // eslint-disable-next-line
-    const [posts, setPosts] = useState(undefined)
+    const [posts, setPosts] = useState()
     const {search} = useLocation();
 
     useEffect(() => {

@@ -4,7 +4,7 @@ import "./Sidebar.css"
 import {Link} from "react-router-dom"
 
 const Siderbar = () => {
-    const [categories, setCategories] = useState([])
+    const [categories, setCategories] = useState()
 
     useEffect(()=>{
         const getCategories = async () =>{
