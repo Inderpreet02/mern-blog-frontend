@@ -44,7 +44,7 @@ const TopBar = () => {
                         
                     )
                     }
-                    <i class="fas fa-search "></i>
+                    <i className="fas fa-search "></i>
                 </div>
             </div>
 
