@@ -36,8 +36,8 @@ const Siderbar = () => {
                     <h2>Categories</h2>
                     <ul>
                         {
-                            categories && categories.map((cat) =>(
-                                <li className="sidebar__option">
+                            categories && categories.map((cat, __i__) =>(
+                                <li className="sidebar__option" key={__i__}>
                                     <Link to={`?cat=${cat.name}`} className="link">
                                         {cat.name}
                                     </Link>
